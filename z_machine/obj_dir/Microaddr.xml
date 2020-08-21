@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<!-- DESCRIPTION: Verilator output: XML representation of netlist -->
+<verilator_xml>
+  <files>
+    <file id="a" filename="&lt;built-in&gt;" language="1800-2017"/>
+    <file id="b" filename="&lt;command-line&gt;" language="1800-2017"/>
+    <file id="c" filename="microaddr.v" language="1800-2017"/>
+    <file id="d" filename="microaddr_counter.v" language="1800-2017"/>
+  </files>
+  <module_files>
+    <file id="d" filename="microaddr_counter.v" language="1800-2017"/>
+  </module_files>
+  <cells>
+    <cell fl="d1" loc="d,1,8,1,25" name="TOP" submodname="TOP" hier="TOP">
+      <cell fl="c1" loc="c,1,9,1,18" name="__PVT__microaddr" submodname="microaddr" hier="TOP.__PVT__microaddr"/>
+    </cell>
+  </cells>
+  <netlist>
+    <module fl="d1" loc="d,1,8,1,25" name="TOP" origName="TOP" topModule="1" public="true">
+      <var fl="d2" loc="d,2,14,2,17" name="clk" dtype_id="1" dir="input" vartype="logic" origName="clk" public="true"/>
+      <var fl="d3" loc="d,3,14,3,19" name="reset" dtype_id="1" dir="input" vartype="logic" origName="reset" public="true"/>
+      <var fl="d4" loc="d,4,23,4,26" name="cmd" dtype_id="2" dir="input" vartype="cmd" origName="cmd" public="true"/>
+      <var fl="d5" loc="d,5,20,5,29" name="load_addr" dtype_id="3" dir="input" vartype="logic" origName="load_addr" public="true"/>
+      <var fl="d6" loc="d,6,21,6,25" name="addr" dtype_id="3" dir="output" vartype="logic" origName="addr" public="true"/>
+      <instance fl="c1" loc="c,1,9,1,18" name="microaddr" defName="microaddr" origName="microaddr"/>
+      <var fl="d9" loc="d,9,13,9,22" name="microaddr_counter.next_addr" dtype_id="3" vartype="logic" origName="next_addr"/>
+      <topscope fl="d1" loc="d,1,8,1,25">
+        <scope fl="d1" loc="d,1,8,1,25" name="TOP"/>
+      </topscope>
+      <var fl="d2" loc="d,2,14,2,17" name="__Vclklast__TOP__clk" dtype_id="1" vartype="logic" origName="__Vclklast__TOP__clk"/>
+      <cfunc fl="d28" loc="d,28,1,28,10" name="_sequent__TOP__1">
+        <comment fl="d28" loc="d,28,1,28,10" name="ALWAYS"/>
+        <assigndly fl="d29" loc="d,29,7,29,9" dtype_id="4">
+          <varref fl="d29" loc="d,29,10,29,19" name="microaddr_counter.next_addr" dtype_id="4"/>
+          <varref fl="d29" loc="d,29,2,29,6" name="addr" dtype_id="4"/>
+        </assigndly>
+      </cfunc>
+      <cfunc fl="d11" loc="d,11,1,11,12" name="_settle__TOP__2">
+        <comment fl="d11" loc="d,11,1,11,12" name="ALWAYS"/>
+        <assign fl="d14" loc="d,14,14,14,15" dtype_id="4">
+          <and fl="d14" loc="d,14,16,14,20" dtype_id="4">
+            <const fl="d14" loc="d,14,16,14,20" name="32&apos;h7ff" dtype_id="5"/>
+            <cond fl="d14" loc="d,14,16,14,20" dtype_id="4">
+              <eq fl="d13" loc="d,13,18,13,19" dtype_id="6">
+                <const fl="d13" loc="d,13,14,13,18" name="2&apos;h0" dtype_id="7"/>
+                <ccast fl="d12" loc="d,12,14,12,17" dtype_id="7">
+                  <varref fl="d12" loc="d,12,14,12,17" name="cmd" dtype_id="7"/>
+                </ccast>
+              </eq>
+              <ccast fl="d14" loc="d,14,16,14,20" dtype_id="4">
+                <varref fl="d14" loc="d,14,16,14,20" name="addr" dtype_id="4"/>
+              </ccast>
+              <cond fl="d16" loc="d,16,21,16,22" dtype_id="4">
+                <eq fl="d15" loc="d,15,17,15,18" dtype_id="6">
+                  <const fl="d15" loc="d,15,14,15,17" name="2&apos;h1" dtype_id="7"/>
+                  <ccast fl="d12" loc="d,12,14,12,17" dtype_id="7">
+                    <varref fl="d12" loc="d,12,14,12,17" name="cmd" dtype_id="7"/>
+                  </ccast>
+                </eq>
+                <add fl="d16" loc="d,16,21,16,22" dtype_id="4">
+                  <ccast fl="d16" loc="d,16,21,16,22" dtype_id="4">
+                    <const fl="d16" loc="d,16,21,16,22" name="11&apos;h1" dtype_id="4"/>
+                  </ccast>
+                  <ccast fl="d16" loc="d,16,16,16,20" dtype_id="4">
+                    <varref fl="d16" loc="d,16,16,16,20" name="addr" dtype_id="4"/>
+                  </ccast>
+                </add>
+                <cond fl="d18" loc="d,18,16,18,25" dtype_id="4">
+                  <eq fl="d17" loc="d,17,18,17,19" dtype_id="6">
+                    <const fl="d17" loc="d,17,14,17,18" name="2&apos;h2" dtype_id="7"/>
+                    <ccast fl="d12" loc="d,12,14,12,17" dtype_id="7">
+                      <varref fl="d12" loc="d,12,14,12,17" name="cmd" dtype_id="7"/>
+                    </ccast>
+                  </eq>
+                  <ccast fl="d18" loc="d,18,16,18,25" dtype_id="4">
+                    <varref fl="d18" loc="d,18,16,18,25" name="load_addr" dtype_id="4"/>
+                  </ccast>
+                  <const fl="d20" loc="d,20,16,20,17" name="11&apos;h0" dtype_id="4"/>
+                </cond>
+              </cond>
+            </cond>
+          </and>
+          <varref fl="d14" loc="d,14,4,14,13" name="microaddr_counter.next_addr" dtype_id="4"/>
+        </assign>
+        <if fl="d23" loc="d,23,2,23,4">
+          <varref fl="d23" loc="d,23,6,23,11" name="reset" dtype_id="8"/>
+          <assign fl="d24" loc="d,24,13,24,14" dtype_id="4">
+            <const fl="d24" loc="d,24,15,24,16" name="11&apos;h0" dtype_id="4"/>
+            <varref fl="d24" loc="d,24,3,24,12" name="microaddr_counter.next_addr" dtype_id="4"/>
+          </assign>
+        </if>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="_eval">
+        <if fl="d28" loc="d,28,11,28,12">
+          <and fl="d28" loc="d,28,13,28,20" dtype_id="8">
+            <ccast fl="d28" loc="d,28,13,28,20" dtype_id="8">
+              <varref fl="d28" loc="d,28,13,28,20" name="clk" dtype_id="8"/>
+            </ccast>
+            <not fl="d28" loc="d,28,13,28,20" dtype_id="8">
+              <ccast fl="d28" loc="d,28,13,28,20" dtype_id="8">
+                <varref fl="d28" loc="d,28,13,28,20" name="__Vclklast__TOP__clk" dtype_id="8"/>
+              </ccast>
+            </not>
+          </and>
+          <ccall fl="d28" loc="d,28,1,28,10"/>
+        </if>
+        <ccall fl="d11" loc="d,11,1,11,12"/>
+        <assign fl="d2" loc="d,2,14,2,17" dtype_id="8">
+          <varref fl="d2" loc="d,2,14,2,17" name="clk" dtype_id="8"/>
+          <varref fl="d2" loc="d,2,14,2,17" name="__Vclklast__TOP__clk" dtype_id="8"/>
+        </assign>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="_eval_initial">
+        <assign fl="d2" loc="d,2,14,2,17" dtype_id="8">
+          <varref fl="d2" loc="d,2,14,2,17" name="clk" dtype_id="8"/>
+          <varref fl="d2" loc="d,2,14,2,17" name="__Vclklast__TOP__clk" dtype_id="8"/>
+        </assign>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="final">
+        <cstmt fl="d1" loc="d,1,8,1,25">
+          <text fl="d1" loc="d,1,8,1,25"/>
+        </cstmt>
+        <cstmt fl="d1" loc="d,1,8,1,25">
+          <text fl="d1" loc="d,1,8,1,25"/>
+        </cstmt>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="_eval_settle">
+        <ccall fl="d11" loc="d,11,1,11,12"/>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="_change_request">
+        <changedet fl="d1" loc="d,1,8,1,25"/>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="_eval_debug_assertions">
+        <if fl="d2" loc="d,2,14,2,17">
+          <and fl="d2" loc="d,2,14,2,17" dtype_id="1">
+            <varref fl="d2" loc="d,2,14,2,17" name="clk" dtype_id="1"/>
+            <const fl="d2" loc="d,2,14,2,17" name="8&apos;hfe" dtype_id="9"/>
+          </and>
+          <cstmt fl="d2" loc="d,2,14,2,17">
+            <text fl="d2" loc="d,2,14,2,17"/>
+          </cstmt>
+        </if>
+        <if fl="d3" loc="d,3,14,3,19">
+          <and fl="d3" loc="d,3,14,3,19" dtype_id="1">
+            <varref fl="d3" loc="d,3,14,3,19" name="reset" dtype_id="1"/>
+            <const fl="d3" loc="d,3,14,3,19" name="8&apos;hfe" dtype_id="9"/>
+          </and>
+          <cstmt fl="d3" loc="d,3,14,3,19">
+            <text fl="d3" loc="d,3,14,3,19"/>
+          </cstmt>
+        </if>
+        <if fl="d4" loc="d,4,23,4,26">
+          <and fl="d4" loc="d,4,23,4,26" dtype_id="2">
+            <varref fl="d4" loc="d,4,23,4,26" name="cmd" dtype_id="2"/>
+            <const fl="d4" loc="d,4,23,4,26" name="8&apos;hfc" dtype_id="9"/>
+          </and>
+          <cstmt fl="d4" loc="d,4,23,4,26">
+            <text fl="d4" loc="d,4,23,4,26"/>
+          </cstmt>
+        </if>
+        <if fl="d5" loc="d,5,20,5,29">
+          <and fl="d5" loc="d,5,20,5,29" dtype_id="3">
+            <varref fl="d5" loc="d,5,20,5,29" name="load_addr" dtype_id="3"/>
+            <const fl="d5" loc="d,5,20,5,29" name="16&apos;hf800" dtype_id="10"/>
+          </and>
+          <cstmt fl="d5" loc="d,5,20,5,29">
+            <text fl="d5" loc="d,5,20,5,29"/>
+          </cstmt>
+        </if>
+      </cfunc>
+      <cfunc fl="d1" loc="d,1,8,1,25" name="_ctor_var_reset">
+        <creset fl="d2" loc="d,2,14,2,17">
+          <varref fl="d2" loc="d,2,14,2,17" name="clk" dtype_id="1"/>
+        </creset>
+        <creset fl="d3" loc="d,3,14,3,19">
+          <varref fl="d3" loc="d,3,14,3,19" name="reset" dtype_id="1"/>
+        </creset>
+        <creset fl="d4" loc="d,4,23,4,26">
+          <varref fl="d4" loc="d,4,23,4,26" name="cmd" dtype_id="2"/>
+        </creset>
+        <creset fl="d5" loc="d,5,20,5,29">
+          <varref fl="d5" loc="d,5,20,5,29" name="load_addr" dtype_id="3"/>
+        </creset>
+        <creset fl="d6" loc="d,6,21,6,25">
+          <varref fl="d6" loc="d,6,21,6,25" name="addr" dtype_id="3"/>
+        </creset>
+        <creset fl="d9" loc="d,9,13,9,22">
+          <varref fl="d9" loc="d,9,13,9,22" name="microaddr_counter.next_addr" dtype_id="3"/>
+        </creset>
+      </cfunc>
+      <cuse fl="d1" loc="d,1,8,1,25" name="microaddr"/>
+    </module>
+    <package fl="c1" loc="c,1,9,1,18" name="microaddr" origName="microaddr">
+      <typedef fl="c5" loc="c,5,3,5,6" name="cmd" dtype_id="2"/>
+      <cfunc fl="c1" loc="c,1,9,1,18" name="_ctor_var_reset"/>
+    </package>
+    <cfile fl="a0" loc="a,0,0,0,0" name="obj_dir/Microaddr__Syms.cpp"/>
+    <cfile fl="a0" loc="a,0,0,0,0" name="obj_dir/Microaddr__Syms.h"/>
+    <cfile fl="a0" loc="a,0,0,0,0" name="obj_dir/Microaddr.h"/>
+    <cfile fl="a0" loc="a,0,0,0,0" name="obj_dir/Microaddr.cpp"/>
+    <cfile fl="a0" loc="a,0,0,0,0" name="obj_dir/Microaddr_microaddr.h"/>
+    <cfile fl="a0" loc="a,0,0,0,0" name="obj_dir/Microaddr_microaddr.cpp"/>
+    <typetable fl="a0" loc="a,0,0,0,0">
+      <enumdtype fl="c3" loc="c,3,9,3,13" id="11" name="microaddr::cmd" sub_dtype_id="2">
+        <enumitem fl="c4" loc="c,4,2,4,6" name="NONE" dtype_id="7">
+          <const fl="c4" loc="c,4,2,4,6" name="2&apos;h0" dtype_id="7"/>
+        </enumitem>
+        <enumitem fl="c4" loc="c,4,8,4,11" name="INC" dtype_id="7">
+          <const fl="c4" loc="c,4,8,4,11" name="2&apos;h1" dtype_id="7"/>
+        </enumitem>
+        <enumitem fl="c4" loc="c,4,13,4,17" name="LOAD" dtype_id="7">
+          <const fl="c4" loc="c,4,13,4,17" name="2&apos;h2" dtype_id="7"/>
+        </enumitem>
+      </enumdtype>
+      <basicdtype fl="c4" loc="c,4,2,4,6" id="2" name="logic" left="1" right="0"/>
+      <basicdtype fl="d2" loc="d,2,8,2,13" id="1" name="logic"/>
+      <refdtype fl="d4" loc="d,4,19,4,22" id="12" name="cmd" sub_dtype_id="2"/>
+      <basicdtype fl="d5" loc="d,5,8,5,13" id="3" name="logic" left="10" right="0"/>
+      <basicdtype fl="d29" loc="d,29,10,29,19" id="4" name="logic" left="31" right="0"/>
+      <basicdtype fl="d13" loc="d,13,14,13,18" id="7" name="logic" left="31" right="0"/>
+      <basicdtype fl="d13" loc="d,13,18,13,19" id="6" name="logic" left="31" right="0"/>
+      <basicdtype fl="d14" loc="d,14,16,14,20" id="5" name="logic" left="31" right="0"/>
+      <basicdtype fl="d23" loc="d,23,6,23,11" id="8" name="logic" left="31" right="0"/>
+      <basicdtype fl="d2" loc="d,2,14,2,17" id="9" name="logic" left="7" right="0"/>
+      <basicdtype fl="d5" loc="d,5,20,5,29" id="10" name="logic" left="15" right="0"/>
+    </typetable>
+  </netlist>
+</verilator_xml>

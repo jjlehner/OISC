@@ -1,0 +1,95 @@
+Verilator Tree Dump (format 0x3900) from <e0> to <e243>
+     NETLIST 0x55cf28d64f80 <e1#> {a0}
+    1: MODULE 0x55cf28d7dd60 <e241#> {d1}  microaddr_counter  L0
+    1:2: PORT 0x55cf28d7e160 <e36#> {d2}  clk
+    1:2: VAR 0x55cf28d7e360 <e39#> {d2} @dt=0@  clk INPUT PORT
+    1:2:1: BASICDTYPE 0x55cf28d7e280 <e38#> {d2} @dt=this@(nw1)  logic kwd=logic
+    1:2: PORT 0x55cf28d7e680 <e48#> {d3}  reset
+    1:2: VAR 0x55cf28d7e880 <e47#> {d3} @dt=0@  reset INPUT PORT
+    1:2:1: BASICDTYPE 0x55cf28d7e7a0 <e46#> {d3} @dt=this@(nw1)  logic kwd=logic
+    1:2: PORT 0x55cf28d7ec40 <e56#> {d4}  cmd
+    1:2: VAR 0x55cf28d7ee60 <e55#> {d4} @dt=0@  cmd INPUT PORT
+    1:2:1: REFDTYPE 0x55cf28d7ed60 <e54#> {d4} @dt=0@  cmd -> UNLINKED
+    1:2: PORT 0x55cf28d7f9d0 <e80#> {d5}  load_addr
+    1:2: VAR 0x55cf28d7ff70 <e79#> {d5} @dt=0@  load_addr INPUT PORT
+    1:2:1: BASICDTYPE 0x55cf28d7faf0 <e78#> {d5} @dt=this@(nw1)  logic kwd=logic
+    1:2:1:1: RANGE 0x55cf28d7fbd0 <e75#> {d5}
+    1:2:1:1:2: CONST 0x55cf28d7fc90 <e73#> {d5} @dt=0x55cf28d7f3e0@(G/swu32/4)  ?32?sha
+    1:2:1:1:3: CONST 0x55cf28d7fe00 <e74#> {d5} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh0
+    1:2: PORT 0x55cf28d80b90 <e108#> {d6}  addr
+    1:2: VAR 0x55cf28d81190 <e107#> {d6} @dt=0@  addr OUTPUT PORT
+    1:2:1: BASICDTYPE 0x55cf28d80cb0 <e106#> {d6} @dt=this@(nw1)  logic kwd=logic
+    1:2:1:1: RANGE 0x55cf28d80d90 <e103#> {d6}
+    1:2:1:1:2: CONST 0x55cf28d80e50 <e101#> {d6} @dt=0x55cf28d7f3e0@(G/swu32/4)  ?32?sha
+    1:2:1:1:3: CONST 0x55cf28d80fe0 <e102#> {d6} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh0
+    1:2: VAR 0x55cf28d82330 <e235#> {d9} @dt=0@  next_addr VAR
+    1:2:1: BASICDTYPE 0x55cf28d81e50 <e133#> {d9} @dt=this@(nw1)  logic kwd=logic
+    1:2:1:1: RANGE 0x55cf28d81f30 <e131#> {d9}
+    1:2:1:1:2: CONST 0x55cf28d81ff0 <e129#> {d9} @dt=0x55cf28d7f3e0@(G/swu32/4)  ?32?sha
+    1:2:1:1:3: CONST 0x55cf28d82180 <e130#> {d9} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh0
+    1:2: ALWAYS 0x55cf28d85f50 <e222#> {d11} [always_comb]
+    1:2:2: BEGIN 0x55cf28d825f0 <e134#> {d11} [UNNAMED]
+    1:2:2:1: CASE 0x55cf28d829b0 <e136#> {d12}
+    1:2:2:1:1: PARSEREF 0x55cf28d828d0 <e137#> {d12}  cmd [TEXT]
+    1:2:2:1:2: CASEITEM 0x55cf28d83170 <e148#> {d13}
+    1:2:2:1:2:1: DOT 0x55cf28d82d30 <e140#> {d13}
+    1:2:2:1:2:1:1: PACKAGEREF 0x55cf28d82c60 <e141#> {d13} pkg=0x55cf28d79910 -> PACKAGE 0x55cf28d79910 <e243#> {c1}  microaddr  L3 [LIB]
+    1:2:2:1:2:1:2: PARSEREF 0x55cf28d82b80 <e142#> {d13}  NONE [TEXT]
+    1:2:2:1:2:2: ASSIGN 0x55cf28d830b0 <e145#> {d14} @dt=0@
+    1:2:2:1:2:2:1: PARSEREF 0x55cf28d82fd0 <e146#> {d14}  addr [TEXT]
+    1:2:2:1:2:2:2: PARSEREF 0x55cf28d82e70 <e147#> {d14}  next_addr [TEXT]
+    1:2:2:1:2: CASEITEM 0x55cf28d83dd0 <e169#> {d15}
+    1:2:2:1:2:1: DOT 0x55cf28d834e0 <e151#> {d15}
+    1:2:2:1:2:1:1: PACKAGEREF 0x55cf28d83410 <e152#> {d15} pkg=0x55cf28d79910 -> PACKAGE 0x55cf28d79910 <e243#> {c1}  microaddr  L3 [LIB]
+    1:2:2:1:2:1:2: PARSEREF 0x55cf28d83330 <e153#> {d15}  INC [TEXT]
+    1:2:2:1:2:2: ASSIGN 0x55cf28d83d10 <e165#> {d16} @dt=0@
+    1:2:2:1:2:2:1: ADD 0x55cf28d83c50 <e166#> {d16} @dt=0@
+    1:2:2:1:2:2:1:1: PARSEREF 0x55cf28d837b0 <e163#> {d16}  addr [TEXT]
+    1:2:2:1:2:2:1:2: CONST 0x55cf28d83980 <e164#> {d16} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh1
+    1:2:2:1:2:2:2: PARSEREF 0x55cf28d83620 <e167#> {d16}  next_addr [TEXT]
+    1:2:2:1:2: CASEITEM 0x55cf28d84640 <e181#> {d17}
+    1:2:2:1:2:1: DOT 0x55cf28d841a0 <e172#> {d17}
+    1:2:2:1:2:1:1: PACKAGEREF 0x55cf28d840d0 <e173#> {d17} pkg=0x55cf28d79910 -> PACKAGE 0x55cf28d79910 <e243#> {c1}  microaddr  L3 [LIB]
+    1:2:2:1:2:1:2: PARSEREF 0x55cf28d83ff0 <e174#> {d17}  LOAD [TEXT]
+    1:2:2:1:2:2: ASSIGN 0x55cf28d84580 <e177#> {d18} @dt=0@
+    1:2:2:1:2:2:1: PARSEREF 0x55cf28d844a0 <e178#> {d18}  load_addr [TEXT]
+    1:2:2:1:2:2:2: PARSEREF 0x55cf28d84310 <e179#> {d18}  next_addr [TEXT]
+    1:2:2:1:2: CASEITEM 0x55cf28d84dd0 <e193#> {d19}
+    1:2:2:1:2:2: ASSIGN 0x55cf28d84d10 <e189#> {d20} @dt=0@
+    1:2:2:1:2:2:1: CONST 0x55cf28d84a20 <e190#> {d20} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh0
+    1:2:2:1:2:2:2: PARSEREF 0x55cf28d84830 <e191#> {d20}  next_addr [TEXT]
+    1:2:2:1: IF 0x55cf28d85e00 <e220#> {d23}
+    1:2:2:1:1: EQ 0x55cf28d85520 <e219#> {d23} @dt=0x55cf28d855e0@(G/nw1)
+    1:2:2:1:1:1: PARSEREF 0x55cf28d85060 <e202#> {d23}  reset [TEXT]
+    1:2:2:1:1:2: CONST 0x55cf28d85230 <e203#> {d23} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh1
+    1:2:2:1:2: ASSIGN 0x55cf28d85ca0 <e215#> {d24} @dt=0@
+    1:2:2:1:2:1: CONST 0x55cf28d859b0 <e216#> {d24} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh0
+    1:2:2:1:2:2: PARSEREF 0x55cf28d857c0 <e217#> {d24}  next_addr [TEXT]
+    1:2: ALWAYS 0x55cf28d86aa0 <e234#> {d28} [always_ff]
+    1:2:1: SENTREE 0x55cf28d86320 <e226#> {d28}
+    1:2:1:1: SENITEM 0x55cf28d86260 <e224#> {d28} [POS]
+    1:2:1:1:1: PARSEREF 0x55cf28d86140 <e225#> {d28}  clk [TEXT]
+    1:2:2: BEGIN 0x55cf28d86490 <e227#> {d28} [UNNAMED]
+    1:2:2:1: ASSIGNDLY 0x55cf28d86920 <e230#> {d29} @dt=0@
+    1:2:2:1:1: PARSEREF 0x55cf28d86840 <e231#> {d29}  next_addr [TEXT]
+    1:2:2:1:2: PARSEREF 0x55cf28d866b0 <e232#> {d29}  addr [TEXT]
+    1: PACKAGE 0x55cf28d79910 <e243#> {c1}  microaddr  L3 [LIB]
+    1:2: TYPEDEF 0x55cf28d7ada0 <e30#> {c5} @dt=0@  cmd
+    1:2:1: DEFIMPLICITDTYPE 0x55cf28d7ab20 <e31#> {c3} @dt=0@  __typeimpenum0
+    1:2:1:1: ENUMDTYPE 0x55cf28d7aa20 <e28#> {c3} @dt=0@
+    1:2:1:1:1: BASICDTYPE 0x55cf28d79c30 <e26#> {c3} @dt=this@(nw1)  logic kwd=logic
+    1:2:1:1:1:1: RANGE 0x55cf28d7a500 <e19#> {c3}
+    1:2:1:1:1:1:2: CONST 0x55cf28d79e40 <e17#> {c3} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh1
+    1:2:1:1:1:1:3: CONST 0x55cf28d7a230 <e18#> {c3} @dt=0x55cf28d79fb0@(G/swu32/1)  ?32?sh0
+    1:2:1:1:2: ENUMITEM 0x55cf28d7a680 <e20#> {c4} @dt=0@  NONE
+    1:2:1:1:2: ENUMITEM 0x55cf28d7a7e0 <e22#> {c4} @dt=0@  INC
+    1:2:1:1:2: ENUMITEM 0x55cf28d7a940 <e24#> {c4} @dt=0@  LOAD
+    1:2:4: ATTROF 0x55cf28d7aca0 <e29#> {c5} [DT_PUBLIC]
+    3: TYPETABLE 0x55cf28d655f0 <e2#> {a0}
+		   logic  -> BASICDTYPE 0x55cf28d855e0 <e206#> {d23} @dt=this@(G/nw1)  logic [GENERIC] kwd=logic
+		detailed  ->  BASICDTYPE 0x55cf28d855e0 <e206#> {d23} @dt=this@(G/nw1)  logic [GENERIC] kwd=logic
+		detailed  ->  BASICDTYPE 0x55cf28d79fb0 <e8#> {c3} @dt=this@(G/swu32/1)  logic [GENERIC] kwd=logic range=[31:0]
+		detailed  ->  BASICDTYPE 0x55cf28d7f3e0 <e64#> {d5} @dt=this@(G/swu32/4)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28d79fb0 <e8#> {c3} @dt=this@(G/swu32/1)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28d7f3e0 <e64#> {d5} @dt=this@(G/swu32/4)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28d855e0 <e206#> {d23} @dt=this@(G/nw1)  logic [GENERIC] kwd=logic

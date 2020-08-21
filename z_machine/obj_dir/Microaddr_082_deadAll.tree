@@ -1,0 +1,98 @@
+Verilator Tree Dump (format 0x3900) from <e1862> to <e1865>
+     NETLIST 0x55cf28d64f80 <e1> {a0}
+    1: MODULE 0x55cf28d8eaa0 <e685> {d1}  TOP  L1 [P]
+    1:2: VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [CLK] [P] PORT
+    1:2: VAR 0x55cf28d8f1d0 <e694> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8f910 <e706> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2: CELL 0x55cf28d90050 <e1225> {c1}  __PVT__microaddr -> PACKAGE 0x55cf28d79910 <e243> {c1}  microaddr  L3 [LIB]
+    1:2: VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2: TOPSCOPE 0x55cf28d98ed0 <e1044> {d1}
+    1:2:2: SCOPE 0x55cf28d98cd0 <e1040> {d1}  TOP
+    1:2: VAR 0x55cf28d9d6c0 <e1616> {d2} @dt=0x55cf28d7e280@(G/w1)  __Vclklast__TOP__clk MODULETEMP
+    1:2: CFUNC 0x55cf28da35e0 <e1724> {d28}  _sequent__TOP__1 [STATICU]
+    1:2:3: COMMENT 0x55cf28d9dcc0 <e1604> {d28}  ALWAYS
+    1:2:3: ASSIGNDLY 0x55cf28d9cec0 <e1793> {d29} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1: VARREF 0x55cf28d9cf80 <e1791> {d29} @dt=0x55cf28da24b0@(G/wu32/11)  microaddr_counter__DOT__next_addr [RV] <- VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:3:2: VARREF 0x55cf28d9f610 <e1792> {d29} @dt=0x55cf28da24b0@(G/wu32/11)  addr [LV] => VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2: CFUNC 0x55cf28da3850 <e1726> {d11}  _settle__TOP__2 [STATICU]
+    1:2:3: COMMENT 0x55cf28d9ed80 <e1654> {d11}  ALWAYS
+    1:2:3: ASSIGN 0x55cf28da8cd0 <e1823> {d14} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1: AND 0x55cf28da2b70 <e1835> {d14} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1:1: CONST 0x55cf28da28d0 <e1831> {d14} @dt=0x55cf28da2a40@(G/w32)  32'h7ff
+    1:2:3:1:2: COND 0x55cf28da8d90 <e1832> {d14} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1:2:1: EQ 0x55cf28da8e50 <e1806> {d13} @dt=0x55cf28da27a0@(G/nwu32/1)
+    1:2:3:1:2:1:1: CONST 0x55cf28da8f10 <e1797> {d13} @dt=0x55cf28da2590@(G/wu32/2)  2'h0
+    1:2:3:1:2:1:2: VARREF 0x55cf28da9080 <e1802> {d12} @dt=0x55cf28da2590@(G/wu32/2)  cmd [RV] <- VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2:3:1:2:2: VARREF 0x55cf28da91a0 <e1807> {d14} @dt=0x55cf28da24b0@(G/wu32/11)  addr [RV] <- VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2:3:1:2:3: COND 0x55cf28da92c0 <e1820> {d16} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1:2:3:1: EQ 0x55cf28da9380 <e1810> {d15} @dt=0x55cf28da27a0@(G/nwu32/1)
+    1:2:3:1:2:3:1:1: CONST 0x55cf28da9440 <e1808> {d15} @dt=0x55cf28da2590@(G/wu32/2)  2'h1
+    1:2:3:1:2:3:1:2: VARREF 0x55cf28da95b0 <e1809> {d12} @dt=0x55cf28da2590@(G/wu32/2)  cmd [RV] <- VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2:3:1:2:3:2: ADD 0x55cf28da96d0 <e1813> {d16} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1:2:3:2:1: CONST 0x55cf28da9790 <e1811> {d16} @dt=0x55cf28da24b0@(G/wu32/11)  11'h1
+    1:2:3:1:2:3:2:2: VARREF 0x55cf28da9900 <e1812> {d16} @dt=0x55cf28da24b0@(G/wu32/11)  addr [RV] <- VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2:3:1:2:3:3: COND 0x55cf28da9a20 <e1819> {d18} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:1:2:3:3:1: EQ 0x55cf28da9ae0 <e1816> {d17} @dt=0x55cf28da27a0@(G/nwu32/1)
+    1:2:3:1:2:3:3:1:1: CONST 0x55cf28da9ba0 <e1814> {d17} @dt=0x55cf28da2590@(G/wu32/2)  2'h2
+    1:2:3:1:2:3:3:1:2: VARREF 0x55cf28da9d10 <e1815> {d12} @dt=0x55cf28da2590@(G/wu32/2)  cmd [RV] <- VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2:3:1:2:3:3:2: VARREF 0x55cf28da9e30 <e1817> {d18} @dt=0x55cf28da24b0@(G/wu32/11)  load_addr [RV] <- VAR 0x55cf28d8f910 <e706> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [PI] INPUT [P] PORT
+    1:2:3:1:2:3:3:3: CONST 0x55cf28da9f50 <e1818> {d20} @dt=0x55cf28da24b0@(G/wu32/11)  11'h0
+    1:2:3:2: VARREF 0x55cf28daa0c0 <e1822> {d14} @dt=0x55cf28da24b0@(G/wu32/11)  microaddr_counter__DOT__next_addr [LV] => VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:3: IF 0x55cf28daa980 <e1362> {d23}
+    1:2:3:1: VARREF 0x55cf28daaa50 <e1839> {d23} @dt=0x55cf28da0030@(G/wu32/1)  reset [RV] <- VAR 0x55cf28d8f1d0 <e694> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [PI] INPUT [P] PORT
+    1:2:3:2: ASSIGN 0x55cf28daab70 <e1842> {d24} @dt=0x55cf28da24b0@(G/wu32/11)
+    1:2:3:2:1: CONST 0x55cf28daac30 <e1840> {d24} @dt=0x55cf28da24b0@(G/wu32/11)  11'h0
+    1:2:3:2:2: VARREF 0x55cf28daada0 <e1841> {d24} @dt=0x55cf28da24b0@(G/wu32/11)  microaddr_counter__DOT__next_addr [LV] => VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2: CFUNC 0x55cf28d9db40 <e1730> {d1}  _eval [STATIC]
+    1:2:3: IF 0x55cf28dac3c0 <e1647> {d28}
+    1:2:3:1: AND 0x55cf28d9ecc0 <e1846> {d28} @dt=0x55cf28da0030@(G/wu32/1)
+    1:2:3:1:1: VARREF 0x55cf28d9e9c0 <e1843> {d28} @dt=0x55cf28da0030@(G/wu32/1)  clk [RV] <- VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [CLK] [P] PORT
+    1:2:3:1:2: NOT 0x55cf28d9ec00 <e1845> {d28} @dt=0x55cf28da0030@(G/wu32/1)
+    1:2:3:1:2:1: VARREF 0x55cf28d9eae0 <e1844> {d28} @dt=0x55cf28da0030@(G/wu32/1)  __Vclklast__TOP__clk [RV] <- VAR 0x55cf28d9d6c0 <e1616> {d2} @dt=0x55cf28d7e280@(G/w1)  __Vclklast__TOP__clk MODULETEMP
+    1:2:3:2: CCALL 0x55cf28d76a30 <e1609> {d28} _sequent__TOP__1 => CFUNC 0x55cf28da35e0 <e1724> {d28}  _sequent__TOP__1 [STATICU]
+    1:2:3: CCALL 0x55cf28d9fda0 <e1756> {d11} _settle__TOP__2 => CFUNC 0x55cf28da3850 <e1726> {d11}  _settle__TOP__2 [STATICU]
+    1:2:4: ASSIGN 0x55cf28d9e900 <e1849> {d2} @dt=0x55cf28da0030@(G/wu32/1)
+    1:2:4:1: VARREF 0x55cf28d9e7e0 <e1847> {d2} @dt=0x55cf28da0030@(G/wu32/1)  clk [RV] <- VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [CLK] [P] PORT
+    1:2:4:2: VARREF 0x55cf28d9e6c0 <e1848> {d2} @dt=0x55cf28da0030@(G/wu32/1)  __Vclklast__TOP__clk [LV] => VAR 0x55cf28d9d6c0 <e1616> {d2} @dt=0x55cf28d7e280@(G/w1)  __Vclklast__TOP__clk MODULETEMP
+    1:2: CFUNC 0x55cf28dab9f0 <e1732> {d1}  _eval_initial [SLOW] [STATIC]
+    1:2:3: ASSIGN 0x55cf28d9da00 <e1852> {d2} @dt=0x55cf28da0030@(G/wu32/1)
+    1:2:3:1: VARREF 0x55cf28d9e480 <e1850> {d2} @dt=0x55cf28da0030@(G/wu32/1)  clk [RV] <- VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [CLK] [P] PORT
+    1:2:3:2: VARREF 0x55cf28d9e5a0 <e1851> {d2} @dt=0x55cf28da0030@(G/wu32/1)  __Vclklast__TOP__clk [LV] => VAR 0x55cf28d9d6c0 <e1616> {d2} @dt=0x55cf28d7e280@(G/w1)  __Vclklast__TOP__clk MODULETEMP
+    1:2: CFUNC 0x55cf28dabb70 <e1734> {d1}  final [SLOW]
+    1:2:2: CSTMT 0x55cf28d9caa0 <e1578> {d1}
+    1:2:2:1: TEXT 0x55cf28dabcf0 <e1579> {d1} "Microaddr__Syms* __restrict vlSymsp = this->__VlSymsp;..."
+    1:2:2: CSTMT 0x55cf28dabde0 <e1582> {d1}
+    1:2:2:1: TEXT 0x55cf28da32a0 <e1581> {d1} "Microaddr* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;..."
+    1:2: CFUNC 0x55cf28d9d540 <e1736> {d1}  _eval_settle [SLOW] [STATIC]
+    1:2:3: CCALL 0x55cf28d9dff0 <e1659> {d11} _settle__TOP__2 => CFUNC 0x55cf28da3850 <e1726> {d11}  _settle__TOP__2 [STATICU]
+    1:2: CFUNC 0x55cf28d9f2b0 <e1738> {d1}  _change_request [STATICU]
+    1:2:3: CHANGEDET 0x55cf28daa680 <e1715> {d1}
+    1: PACKAGE 0x55cf28d79910 <e243> {c1}  microaddr  L3 [LIB]
+    1:2: TYPEDEF 0x55cf28d7ada0 <e367> {c5} @dt=0x55cf28d7aa20@(w2)  cmd [PUBLIC]
+    3: TYPETABLE 0x55cf28d655f0 <e2> {a0}
+		detailed  ->  BASICDTYPE 0x55cf28d7e280 <e397> {d2} @dt=this@(G/w1)  logic [GENERIC] kwd=logic
+		detailed  ->  BASICDTYPE 0x55cf28d89cf0 <e382> {c4} @dt=this@(G/w2)  logic [GENERIC] kwd=logic range=[1:0]
+		detailed  ->  BASICDTYPE 0x55cf28d7faf0 <e407> {d5} @dt=this@(G/w11)  logic [GENERIC] kwd=logic range=[10:0]
+		detailed  ->  BASICDTYPE 0x55cf28da0030 <e1838> {d23} @dt=this@(G/wu32/1)  logic [GENERIC] kwd=logic range=[31:0]
+		detailed  ->  BASICDTYPE 0x55cf28da27a0 <e1805> {d13} @dt=this@(G/nwu32/1)  logic [GENERIC] kwd=logic range=[31:0]
+		detailed  ->  BASICDTYPE 0x55cf28da2590 <e1796> {d13} @dt=this@(G/wu32/2)  logic [GENERIC] kwd=logic range=[31:0]
+		detailed  ->  BASICDTYPE 0x55cf28da24b0 <e1790> {d29} @dt=this@(G/wu32/11)  logic [GENERIC] kwd=logic range=[31:0]
+		detailed  ->  BASICDTYPE 0x55cf28da2a40 <e1828> {d14} @dt=this@(G/w32)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: ENUMDTYPE 0x55cf28d7aa20 <e375> {c3} @dt=this@(w2)  microaddr::cmd refdt=0x55cf28d89cf0(G/w2)
+    3:1:2: ENUMITEM 0x55cf28d7a680 <e1858> {c4} @dt=0x55cf28da2590@(G/wu32/2)  NONE
+    3:1:2:2: CONST 0x55cf28d88150 <e1857> {c4} @dt=0x55cf28da2590@(G/wu32/2)  2'h0
+    3:1:2: ENUMITEM 0x55cf28d7a7e0 <e1860> {c4} @dt=0x55cf28da2590@(G/wu32/2)  INC
+    3:1:2:2: CONST 0x55cf28d89eb0 <e1859> {c4} @dt=0x55cf28da2590@(G/wu32/2)  2'h1
+    3:1:2: ENUMITEM 0x55cf28d7a940 <e1862#> {c4} @dt=0x55cf28da2590@(G/wu32/2)  LOAD
+    3:1:2:2: CONST 0x55cf28d8a200 <e1861> {c4} @dt=0x55cf28da2590@(G/wu32/2)  2'h2
+    3:1: BASICDTYPE 0x55cf28d89cf0 <e382> {c4} @dt=this@(G/w2)  logic [GENERIC] kwd=logic range=[1:0]
+    3:1: BASICDTYPE 0x55cf28d7e280 <e397> {d2} @dt=this@(G/w1)  logic [GENERIC] kwd=logic
+    3:1: REFDTYPE 0x55cf28d7ed60 <e405> {d4} @dt=0x55cf28d7aa20@(w2)  cmd refdt=0x55cf28d7aa20(w2) -> ENUMDTYPE 0x55cf28d7aa20 <e375> {c3} @dt=this@(w2)  microaddr::cmd refdt=0x55cf28d89cf0(G/w2)
+    3:1: BASICDTYPE 0x55cf28d7faf0 <e407> {d5} @dt=this@(G/w11)  logic [GENERIC] kwd=logic range=[10:0]
+    3:1: BASICDTYPE 0x55cf28da24b0 <e1790> {d29} @dt=this@(G/wu32/11)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28da2590 <e1796> {d13} @dt=this@(G/wu32/2)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28da27a0 <e1805> {d13} @dt=this@(G/nwu32/1)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28da2a40 <e1828> {d14} @dt=this@(G/w32)  logic [GENERIC] kwd=logic range=[31:0]
+    3:1: BASICDTYPE 0x55cf28da0030 <e1838> {d23} @dt=this@(G/wu32/1)  logic [GENERIC] kwd=logic range=[31:0]

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjl119/Programming/FPGA_learning/OISC/simulator2/main.cpp
+array
+-
+cassert
+-
+cinttypes
+-
+cmath
+-
+filesystem
+-
+fstream
+-
+iostream
+-
+limits
+-
+sstream
+-
+

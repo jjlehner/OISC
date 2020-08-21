@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjl119/Programming/FPGA_learning/OISC/simulator/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+simulator.hpp
+/home/jjl119/Programming/FPGA_learning/OISC/simulator/simulator.hpp
+cassert
+-
+
+/home/jjl119/Programming/FPGA_learning/OISC/simulator/simulator.hpp
+simulator.hpp
+/home/jjl119/Programming/FPGA_learning/OISC/simulator/simulator.hpp
+bitset
+-
+cassert
+-
+iomanip
+-
+algorithm
+-
+vector
+-
+

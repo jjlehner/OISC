@@ -1,0 +1,13 @@
+Signals and their clock domains:
+  0x55cf28d98f90 clk                                                @(*)
+  0x55cf28d99070 reset                                              @(*)
+  0x55cf28d99150 cmd                                                @(*)
+  0x55cf28d99230 load_addr                                          @(*)
+  0x55cf28d99310 addr                                               @(posedge clk)
+  0x55cf28d99310 addr {POST}                                        @([settle])
+  0x55cf28d99310 addr {PRE}                                         @([settle])
+  0x55cf28d9a9a0 microaddr_counter.next_addr                        @(*)
+  0x55cf28d9a9a0 microaddr_counter.next_addr {POST}                 @(posedge clk)
+  0x55cf28d9a9a0 microaddr_counter.next_addr {PRE}                  @(posedge clk)
+  0x55cf28da7ba0 __Vdly__addr                                       @(posedge clk)
+  0x55cf28da7ba0 __Vdly__addr {PORD}                                @(posedge clk)

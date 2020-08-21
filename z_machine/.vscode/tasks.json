@@ -1,0 +1,28 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Verilator",
+			"type": "shell",
+			"command": "verilator -Wall --debug -cc microaddr.v microaddr_counter.v -prefix Microaddr --exe microaddr_counter_test.cpp -CFLAGS \"-std=c++11\""
+		},
+		{
+			"label": "Make",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/obj_dir"
+			},
+			"command": "make -j4 -f Microaddr.mk Microaddr && .obj_dir/Microaddr"
+		},
+		{
+			"label": "Compile & Run",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"command": "g++ del_me.cpp -o del_me.exe && ./del_me.exe && rm del_me.exe",
+		}
+	]
+}

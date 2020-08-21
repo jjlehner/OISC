@@ -1,0 +1,41 @@
+`begin_keywords "1800-2017"
+`line 1 "microaddr_counter.v" 1
+module microaddr_counter(
+	input logic clk,
+	input logic reset,
+	input microaddr::cmd cmd,
+	input logic[10:0] load_addr,
+	output logic[10:0] addr
+);
+
+`line 9 "microaddr_counter.v" 0
+logic[10:0] next_addr;
+
+`line 11 "microaddr_counter.v" 0
+always_comb begin
+	unique case(cmd)
+		microaddr::NONE:
+			next_addr = addr;
+		microaddr::INC:
+			next_addr = addr + 1;
+		microaddr::LOAD:
+			next_addr = load_addr;
+		default:
+			next_addr = 0;
+	endcase 
+
+`line 23 "microaddr_counter.v" 0
+	if (reset == 1)
+		next_addr = 0;
+
+`line 26 "microaddr_counter.v" 0
+end
+
+`line 28 "microaddr_counter.v" 0
+always_ff @(posedge clk) begin
+	addr <= next_addr;
+end
+
+`line 32 "microaddr_counter.v" 0
+endmodule
+`line 33 "microaddr_counter.v" 2

@@ -1,0 +1,8 @@
+/home/jjl119/Programming/FPGA_learning/OISC/build/CMakeFiles/rebuild_cache.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/CMakeFiles/edit_cache.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/simulator/CMakeFiles/rebuild_cache.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/simulator/CMakeFiles/SIMULATOR.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/simulator/CMakeFiles/edit_cache.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/simulator2/CMakeFiles/rebuild_cache.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/simulator2/CMakeFiles/SIMULATOR2.dir
+/home/jjl119/Programming/FPGA_learning/OISC/build/simulator2/CMakeFiles/edit_cache.dir

@@ -1,0 +1,97 @@
+Verilator Tree Dump (format 0x3900) from <e1147> to <e1150>
+     NETLIST 0x55cf28d64f80 <e1> {a0}
+    1: MODULE 0x55cf28d8eaa0 <e685> {d1}  TOP  L1 [P]
+    1:2: VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8f1d0 <e694> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8f910 <e706> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [PI] INPUT [P] PORT
+    1:2: VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2: CELL 0x55cf28d90050 <e719> {c1}  microaddr -> PACKAGE 0x55cf28d79910 <e243> {c1}  microaddr  L3 [LIB]
+    1:2: VAR 0x55cf28d93730 <e920> {d2} @dt=0x55cf28d7e280@(G/w1)  microaddr_counter__DOT__clk PORT
+    1:2: VAR 0x55cf28d939e0 <e542> {d3} @dt=0x55cf28d7e280@(G/w1)  microaddr_counter__DOT__reset PORT
+    1:2: VAR 0x55cf28d93b60 <e404> {d4} @dt=0x55cf28d7ed60@(w2)  microaddr_counter__DOT__cmd PORT
+    1:2: VAR 0x55cf28d93ce0 <e408> {d5} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__load_addr PORT
+    1:2: VAR 0x55cf28d93e60 <e543> {d6} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__addr PORT
+    1:2: VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2: TOPSCOPE 0x55cf28d98ed0 <e1044> {d1}
+    1:2:2: SCOPE 0x55cf28d98cd0 <e1040> {d1}  TOP
+    1:2:2:1: VARSCOPE 0x55cf28d98f90 <e1046> {d2} @dt=0x55cf28d7e280@(G/w1)  TOP->clk -> VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [P] PORT
+    1:2:2:1: VARSCOPE 0x55cf28d99070 <e1049> {d3} @dt=0x55cf28d7e280@(G/w1)  TOP->reset -> VAR 0x55cf28d8f1d0 <e694> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [PI] INPUT [P] PORT
+    1:2:2:1: VARSCOPE 0x55cf28d99150 <e1052> {d4} @dt=0x55cf28d7ed60@(w2)  TOP->cmd -> VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2:2:1: VARSCOPE 0x55cf28d99230 <e1055> {d5} @dt=0x55cf28d7faf0@(G/w11)  TOP->load_addr -> VAR 0x55cf28d8f910 <e706> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [PI] INPUT [P] PORT
+    1:2:2:1: VARSCOPE 0x55cf28d99310 <e1058> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->addr -> VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2:2:1: VARSCOPE 0x55cf28d9a4c0 <e1065> {d2} @dt=0x55cf28d7e280@(G/w1)  TOP->microaddr_counter__DOT__clk -> VAR 0x55cf28d93730 <e920> {d2} @dt=0x55cf28d7e280@(G/w1)  microaddr_counter__DOT__clk PORT
+    1:2:2:1: VARSCOPE 0x55cf28d9a5a0 <e1068> {d3} @dt=0x55cf28d7e280@(G/w1)  TOP->microaddr_counter__DOT__reset -> VAR 0x55cf28d939e0 <e542> {d3} @dt=0x55cf28d7e280@(G/w1)  microaddr_counter__DOT__reset PORT
+    1:2:2:1: VARSCOPE 0x55cf28d9a680 <e1071> {d4} @dt=0x55cf28d7ed60@(w2)  TOP->microaddr_counter__DOT__cmd -> VAR 0x55cf28d93b60 <e404> {d4} @dt=0x55cf28d7ed60@(w2)  microaddr_counter__DOT__cmd PORT
+    1:2:2:1: VARSCOPE 0x55cf28d9a760 <e1074> {d5} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__load_addr -> VAR 0x55cf28d93ce0 <e408> {d5} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__load_addr PORT
+    1:2:2:1: VARSCOPE 0x55cf28d9a880 <e1077> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__addr -> VAR 0x55cf28d93e60 <e543> {d6} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__addr PORT
+    1:2:2:1: VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2: ASSIGNALIAS 0x55cf28d99430 <e882> {d2} @dt=0x55cf28d7e280@(G/w1)
+    1:2:2:2:1: VARREF 0x55cf28d994f0 <e879> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [RV] <- VARSCOPE 0x55cf28d98f90 <e1046> {d2} @dt=0x55cf28d7e280@(G/w1)  TOP->clk -> VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [P] PORT
+    1:2:2:2:2: VARREF 0x55cf28d99610 <e880> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [LV] => VARSCOPE 0x55cf28d9a4c0 <e1065> {d2} @dt=0x55cf28d7e280@(G/w1)  TOP->microaddr_counter__DOT__clk -> VAR 0x55cf28d93730 <e920> {d2} @dt=0x55cf28d7e280@(G/w1)  microaddr_counter__DOT__clk PORT
+    1:2:2:2: ASSIGNALIAS 0x55cf28d997b0 <e1059> {d3} @dt=0x55cf28d7e280@(G/w1)
+    1:2:2:2:1: VARREF 0x55cf28d99980 <e888> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [RV] <- VARSCOPE 0x55cf28d99070 <e1049> {d3} @dt=0x55cf28d7e280@(G/w1)  TOP->reset -> VAR 0x55cf28d8f1d0 <e694> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [PI] INPUT [P] PORT
+    1:2:2:2:2: VARREF 0x55cf28d99aa0 <e889> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [LV] => VARSCOPE 0x55cf28d9a5a0 <e1068> {d3} @dt=0x55cf28d7e280@(G/w1)  TOP->microaddr_counter__DOT__reset -> VAR 0x55cf28d939e0 <e542> {d3} @dt=0x55cf28d7e280@(G/w1)  microaddr_counter__DOT__reset PORT
+    1:2:2:2: ASSIGNALIAS 0x55cf28d99bc0 <e1060> {d4} @dt=0x55cf28d7ed60@(w2)
+    1:2:2:2:1: VARREF 0x55cf28d99c80 <e897> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [RV] <- VARSCOPE 0x55cf28d99150 <e1052> {d4} @dt=0x55cf28d7ed60@(w2)  TOP->cmd -> VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2:2:2:2: VARREF 0x55cf28d99da0 <e898> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [LV] => VARSCOPE 0x55cf28d9a680 <e1071> {d4} @dt=0x55cf28d7ed60@(w2)  TOP->microaddr_counter__DOT__cmd -> VAR 0x55cf28d93b60 <e404> {d4} @dt=0x55cf28d7ed60@(w2)  microaddr_counter__DOT__cmd PORT
+    1:2:2:2: ASSIGNALIAS 0x55cf28d99ec0 <e1061> {d5} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:1: VARREF 0x55cf28d99f80 <e906> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [RV] <- VARSCOPE 0x55cf28d99230 <e1055> {d5} @dt=0x55cf28d7faf0@(G/w11)  TOP->load_addr -> VAR 0x55cf28d8f910 <e706> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [PI] INPUT [P] PORT
+    1:2:2:2:2: VARREF 0x55cf28d9a0a0 <e907> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [LV] => VARSCOPE 0x55cf28d9a760 <e1074> {d5} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__load_addr -> VAR 0x55cf28d93ce0 <e408> {d5} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__load_addr PORT
+    1:2:2:2: ASSIGNALIAS 0x55cf28d9a1c0 <e1062> {d6} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:1: VARREF 0x55cf28d9a280 <e915> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [RV] <- VARSCOPE 0x55cf28d99310 <e1058> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->addr -> VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2:2:2:2: VARREF 0x55cf28d9a3a0 <e916> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [LV] => VARSCOPE 0x55cf28d9a880 <e1077> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__addr -> VAR 0x55cf28d93e60 <e543> {d6} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__addr PORT
+    1:2:2:2: ALWAYS 0x55cf28d9aac0 <e1081> {d11} [always_comb]
+    1:2:2:2:2: CASE 0x55cf28d9ab80 <e865> {d12}
+    1:2:2:2:2:1: VARREF 0x55cf28d9ac50 <e430> {d12} @dt=0x55cf28d7ed60@(w2)  cmd [RV] <- VARSCOPE 0x55cf28d99150 <e1052> {d4} @dt=0x55cf28d7ed60@(w2)  TOP->cmd -> VAR 0x55cf28d8f570 <e700> {d4} @dt=0x55cf28d7ed60@(w2)  cmd [PI] INPUT [P] PORT
+    1:2:2:2:2:2: CASEITEM 0x55cf28d9ad70 <e148> {d13}
+    1:2:2:2:2:2:1: CONST 0x55cf28d9ae30 <e599> {d13} @dt=0x55cf28d7aa20@(w2)  2'h0
+    1:2:2:2:2:2:2: ASSIGN 0x55cf28d9afa0 <e547> {d14} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:2:2:1: VARREF 0x55cf28d9b060 <e545> {d14} @dt=0x55cf28d7faf0@(G/w11)  addr [RV] <- VARSCOPE 0x55cf28d99310 <e1058> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->addr -> VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2:2:2:2:2:2:2: VARREF 0x55cf28d9b180 <e546> {d14} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr [LV] => VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2:2:2: CASEITEM 0x55cf28d9b2a0 <e169> {d15}
+    1:2:2:2:2:2:1: CONST 0x55cf28d9b360 <e610> {d15} @dt=0x55cf28d7aa20@(w2)  2'h1
+    1:2:2:2:2:2:2: ASSIGN 0x55cf28d9b4d0 <e562> {d16} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:2:2:1: ADD 0x55cf28d9b590 <e773> {d16} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:2:2:1:1: CONST 0x55cf28d9b650 <e785> {d16} @dt=0x55cf28d7faf0@(G/w11)  11'h1
+    1:2:2:2:2:2:2:1:2: VARREF 0x55cf28d9b7c0 <e793> {d16} @dt=0x55cf28d7faf0@(G/w11)  addr [RV] <- VARSCOPE 0x55cf28d99310 <e1058> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->addr -> VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1:2:2:2:2:2:2:2: VARREF 0x55cf28d9b8e0 <e561> {d16} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr [LV] => VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2:2:2: CASEITEM 0x55cf28d9ba00 <e181> {d17}
+    1:2:2:2:2:2:1: CONST 0x55cf28d9bac0 <e621> {d17} @dt=0x55cf28d7aa20@(w2)  2'h2
+    1:2:2:2:2:2:2: ASSIGN 0x55cf28d9bc30 <e564> {d18} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:2:2:1: VARREF 0x55cf28d9bcf0 <e477> {d18} @dt=0x55cf28d7faf0@(G/w11)  load_addr [RV] <- VARSCOPE 0x55cf28d99230 <e1055> {d5} @dt=0x55cf28d7faf0@(G/w11)  TOP->load_addr -> VAR 0x55cf28d8f910 <e706> {d5} @dt=0x55cf28d7faf0@(G/w11)  load_addr [PI] INPUT [P] PORT
+    1:2:2:2:2:2:2:2: VARREF 0x55cf28d9be10 <e563> {d18} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr [LV] => VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2:2:2: CASEITEM 0x55cf28d9bf30 <e193> {d19}
+    1:2:2:2:2:2:2: ASSIGN 0x55cf28d9bff0 <e567> {d20} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:2:2:1: CONST 0x55cf28d9c0b0 <e565> {d20} @dt=0x55cf28d7faf0@(G/w11)  11'h0
+    1:2:2:2:2:2:2:2: VARREF 0x55cf28d9c220 <e566> {d20} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr [LV] => VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2:2: IF 0x55cf28d9c370 <e220> {d23}
+    1:2:2:2:2:1: VARREF 0x55cf28d9c440 <e985> {d23} @dt=0x55cf28d7e280@(G/w1)  reset [RV] <- VARSCOPE 0x55cf28d99070 <e1049> {d3} @dt=0x55cf28d7e280@(G/w1)  TOP->reset -> VAR 0x55cf28d8f1d0 <e694> {d3} @dt=0x55cf28d7e280@(G/w1)  reset [PI] INPUT [P] PORT
+    1:2:2:2:2:2: ASSIGN 0x55cf28d9c560 <e583> {d24} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:2:1: CONST 0x55cf28d9c620 <e581> {d24} @dt=0x55cf28d7faf0@(G/w11)  11'h0
+    1:2:2:2:2:2:2: VARREF 0x55cf28d9c790 <e582> {d24} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr [LV] => VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2: ALWAYS 0x55cf28d9cb60 <e1082> {d28} [always_ff]
+    1:2:2:2:1: SENTREE 0x55cf28d9cc20 <e226> {d28}
+    1:2:2:2:1:1: SENITEM 0x55cf28d9cce0 <e224> {d28} [POS]
+    1:2:2:2:1:1:1: VARREF 0x55cf28d9cda0 <e534> {d28} @dt=0x55cf28d7e280@(G/w1)  clk [RV] <- VARSCOPE 0x55cf28d98f90 <e1046> {d2} @dt=0x55cf28d7e280@(G/w1)  TOP->clk -> VAR 0x55cf28d8ee30 <e689> {d2} @dt=0x55cf28d7e280@(G/w1)  clk [PI] INPUT [P] PORT
+    1:2:2:2:2: ASSIGNDLY 0x55cf28d9cec0 <e868> {d29} @dt=0x55cf28d7faf0@(G/w11)
+    1:2:2:2:2:1: VARREF 0x55cf28d9cf80 <e584> {d29} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr [RV] <- VARSCOPE 0x55cf28d9a9a0 <e1080> {d9} @dt=0x55cf28d7faf0@(G/w11)  TOP->microaddr_counter__DOT__next_addr -> VAR 0x55cf28d93fe0 <e544> {d9} @dt=0x55cf28d7faf0@(G/w11)  microaddr_counter__DOT__next_addr VAR
+    1:2:2:2:2:2: VARREF 0x55cf28d9d0d0 <e585> {d29} @dt=0x55cf28d7faf0@(G/w11)  addr [LV] => VARSCOPE 0x55cf28d99310 <e1058> {d6} @dt=0x55cf28d7faf0@(G/w11)  TOP->addr -> VAR 0x55cf28d8fcb0 <e712> {d6} @dt=0x55cf28d7faf0@(G/w11)  addr [PO] OUTPUT [P] PORT
+    1: PACKAGE 0x55cf28d79910 <e243> {c1}  microaddr  L3 [LIB]
+    1:2: TYPEDEF 0x55cf28d7ada0 <e367> {c5} @dt=0x55cf28d7aa20@(w2)  cmd [PUBLIC]
+    1:2: SCOPE 0x55cf28d98dd0 <e1042> {c1}  TOP.microaddr
+    3: TYPETABLE 0x55cf28d655f0 <e2> {a0}
+		detailed  ->  BASICDTYPE 0x55cf28d7e280 <e397> {d2} @dt=this@(G/w1)  logic [GENERIC] kwd=logic
+		detailed  ->  BASICDTYPE 0x55cf28d89cf0 <e382> {c4} @dt=this@(G/w2)  logic [GENERIC] kwd=logic range=[1:0]
+		detailed  ->  BASICDTYPE 0x55cf28d7faf0 <e407> {d5} @dt=this@(G/w11)  logic [GENERIC] kwd=logic range=[10:0]
+    3:1: ENUMDTYPE 0x55cf28d7aa20 <e375> {c3} @dt=this@(w2)  microaddr::cmd refdt=0x55cf28d89cf0(G/w2)
+    3:1:2: ENUMITEM 0x55cf28d7a680 <e376> {c4} @dt=0x55cf28d7aa20@(w2)  NONE
+    3:1:2:2: CONST 0x55cf28d88150 <e383> {c4} @dt=0x55cf28d89cf0@(G/w2)  2'h0
+    3:1:2: ENUMITEM 0x55cf28d7a7e0 <e377> {c4} @dt=0x55cf28d7aa20@(w2)  INC
+    3:1:2:2: CONST 0x55cf28d89eb0 <e389> {c4} @dt=0x55cf28d89cf0@(G/w2)  2'h1
+    3:1:2: ENUMITEM 0x55cf28d7a940 <e378> {c4} @dt=0x55cf28d7aa20@(w2)  LOAD
+    3:1:2:2: CONST 0x55cf28d8a200 <e395> {c4} @dt=0x55cf28d89cf0@(G/w2)  2'h2
+    3:1: BASICDTYPE 0x55cf28d89cf0 <e382> {c4} @dt=this@(G/w2)  logic [GENERIC] kwd=logic range=[1:0]
+    3:1: BASICDTYPE 0x55cf28d7e280 <e397> {d2} @dt=this@(G/w1)  logic [GENERIC] kwd=logic
+    3:1: REFDTYPE 0x55cf28d7ed60 <e405> {d4} @dt=0x55cf28d7aa20@(w2)  cmd refdt=0x55cf28d7aa20(w2) -> ENUMDTYPE 0x55cf28d7aa20 <e375> {c3} @dt=this@(w2)  microaddr::cmd refdt=0x55cf28d89cf0(G/w2)
+    3:1: BASICDTYPE 0x55cf28d7faf0 <e407> {d5} @dt=this@(G/w11)  logic [GENERIC] kwd=logic range=[10:0]

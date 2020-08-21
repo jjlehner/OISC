@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/jjl119/Programming/FPGA_learning/OISC/build/simulator",
+  "command": "/bin/g++-9  -I/home/jjl119/Programming/FPGA_learning/OISC/simulator/$(CMAKE_CURRENT_SOURCE_DIR) -g -std=gnu++17 -o CMakeFiles/SIMULATOR.dir/main.cpp.o -c /home/jjl119/Programming/FPGA_learning/OISC/simulator/main.cpp",
+  "file": "/home/jjl119/Programming/FPGA_learning/OISC/simulator/main.cpp"
+},
+{
+  "directory": "/home/jjl119/Programming/FPGA_learning/OISC/build/simulator2",
+  "command": "/bin/g++-9  -I/home/jjl119/Programming/FPGA_learning/OISC/simulator2/$(CMAKE_CURRENT_SOURCE_DIR) -g -std=gnu++17 -o CMakeFiles/SIMULATOR2.dir/main.cpp.o -c /home/jjl119/Programming/FPGA_learning/OISC/simulator2/main.cpp",
+  "file": "/home/jjl119/Programming/FPGA_learning/OISC/simulator2/main.cpp"
+}
+]

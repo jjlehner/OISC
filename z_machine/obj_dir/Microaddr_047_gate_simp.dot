@@ -1,0 +1,46 @@
+digraph v3graph {
+	graph	[label="obj_dir/Microaddr_047_gate_simp.dot",
+		 labelloc=t, labeljust=l,
+		 //size="7.5,10",
+		 rankdir=TB];
+	n0	[fontsize=8 label="0x55cf28da3f70@TOP", color=purple];
+	n1	[fontsize=8 label="0x55cf28d99430@TOP", color=purple, style=dotted];
+	n2	[fontsize=8 label="0x55cf28d98f90 TOP->clk", color=blue];
+	n3	[fontsize=8 label="0x55cf28d9a4c0 TOP->microaddr_counter__DOT__clk", color=blue, style=dotted];
+	n4	[fontsize=8 label="0x55cf28d997b0@TOP", color=purple, style=dotted];
+	n5	[fontsize=8 label="0x55cf28d99070 TOP->reset", color=blue];
+	n6	[fontsize=8 label="0x55cf28d9a5a0 TOP->microaddr_counter__DOT__reset", color=blue, style=dotted];
+	n7	[fontsize=8 label="0x55cf28d99bc0@TOP", color=purple, style=dotted];
+	n8	[fontsize=8 label="0x55cf28d99150 TOP->cmd", color=blue];
+	n9	[fontsize=8 label="0x55cf28d9a680 TOP->microaddr_counter__DOT__cmd", color=blue, style=dotted];
+	n10	[fontsize=8 label="0x55cf28d99ec0@TOP", color=purple, style=dotted];
+	n11	[fontsize=8 label="0x55cf28d99230 TOP->load_addr", color=blue];
+	n12	[fontsize=8 label="0x55cf28d9a760 TOP->microaddr_counter__DOT__load_addr", color=blue, style=dotted];
+	n13	[fontsize=8 label="0x55cf28d9a1c0@TOP", color=purple, style=dotted];
+	n14	[fontsize=8 label="0x55cf28d99310 TOP->addr", color=blue];
+	n15	[fontsize=8 label="0x55cf28d9a880 TOP->microaddr_counter__DOT__addr", color=blue, style=dotted];
+	n16	[fontsize=8 label="0x55cf28da4c30@TOP", color=purple, style=dotted];
+	n17	[fontsize=8 label="0x55cf28d9a9a0 TOP->microaddr_counter__DOT__next_addr", color=blue, style=dotted];
+	n18	[fontsize=8 label="0x55cf28da4a50@TOP", color=purple, style=dotted];
+	n19	[fontsize=8 label="0x55cf28da42a0@TOP", color=purple];
+	n20	[fontsize=8 label="0x55cf28d9cb60@TOP", color=purple, style=dotted];
+	n1 -> n3 [fontsize=8 label="" weight=1 color=red];
+	n2 -> n1 [fontsize=8 label="" weight=1 color=red];
+	n2 -> n19 [fontsize=8 label="" weight=1 color=red];
+	n4 -> n6 [fontsize=8 label="" weight=1 color=red];
+	n5 -> n4 [fontsize=8 label="" weight=1 color=red];
+	n5 -> n16 [fontsize=8 label="" weight=1 color=red];
+	n5 -> n18 [fontsize=8 label="" weight=1 color=red];
+	n7 -> n9 [fontsize=8 label="" weight=1 color=red];
+	n8 -> n7 [fontsize=8 label="" weight=1 color=red];
+	n8 -> n16 [fontsize=8 label="" weight=3 color=red];
+	n10 -> n12 [fontsize=8 label="" weight=1 color=red];
+	n11 -> n10 [fontsize=8 label="" weight=1 color=red];
+	n11 -> n16 [fontsize=8 label="" weight=1 color=red];
+	n13 -> n15 [fontsize=8 label="" weight=1 color=red];
+	n14 -> n13 [fontsize=8 label="" weight=1 color=red];
+	n14 -> n16 [fontsize=8 label="" weight=2 color=red];
+	n16 -> n17 [fontsize=8 label="" weight=2 color=red];
+	n17 -> n20 [fontsize=8 label="" weight=1 color=red];
+	n20 -> n14 [fontsize=8 label="" weight=1 color=red];
+}

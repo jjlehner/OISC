@@ -1,0 +1,5 @@
+increment stack pointer,
+save offset length to first position of new stack element
+save return line to 
+jump to first line of new function
+
