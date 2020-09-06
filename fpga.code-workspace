@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "OISC"
+		},
+		{
+			"path": "logicAnalyser"
 		}
 	],
 	"settings": {

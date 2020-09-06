@@ -153,5 +153,5 @@ int main()
 		pc = ( pc_word.leq() ) ? pc_word.c() : pc + 1;
 	}
 	std::cout<<std::endl<<std::endl;
-	dumpRam( std::cout, 0xc );
+	dumpRam( std::cout, 0x100 );
 }
