@@ -1,4 +1,4 @@
-package main
+package structure
 
 import (
 	"fmt"
@@ -130,7 +130,7 @@ func createRootNode(list *linkedList) (root node) {
 	list.testOutputList()
 	return val
 }
-func descendExpression(expr []rune, cursorStart int) (root node, endPosition int) {
+func DescendExpression(expr []rune, cursorStart int) (root node, endPosition int) {
 	strLen := len(expr)
 	longVariable := false
 	var list linkedList
@@ -140,7 +140,7 @@ func descendExpression(expr []rune, cursorStart int) (root node, endPosition int
 			switch c {
 			case '(':
 				var child node
-				child, i = descendExpression(expr, cursorStart+1)
+				child, i = DescendExpression(expr, cursorStart+1)
 				cursorStart = i + 1
 				list.attach(child)
 			case ')':
@@ -167,7 +167,7 @@ func descendExpression(expr []rune, cursorStart int) (root node, endPosition int
 		} else {
 			if c == '"' {
 				longVariableNode := node(Input_node_constructor(string(expr[cursorStart:i])))
-				list.attach(&longVariableNode)
+				list.attach(longVariableNode)
 				cursorStart = i + 1
 				longVariable = false
 			}
